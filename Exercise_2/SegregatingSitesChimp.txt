@@ -1,0 +1,3 @@
+SpeciesPop	NumIndividuals	SegregatingSites	NumSites	MutRatePerSite
+Central	5	126	50000	1.2e-8
+Western	5	64	50000	1.2e-8
