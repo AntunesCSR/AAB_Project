@@ -19,33 +19,34 @@ setwd("./Exercise_2") # set working directory
 # Load data
 pan_data <- read.table("SegregatingSitesChimp.txt", header = TRUE)
 
-pop <- pan_data$Population # load population
+pop <- pan_data$SpeciesPop # load population
 pop
-ind_num <- pan_data$NumIndividuals # load number of individuals
+ind_num <- pan_data$NumIndividuals[1] # load number of individuals
 ind_num
 seg_sites <- pan_data$SegregatingSites # load segregating sites
 seg_sites
-num_sites <- pan_data$NumSites # load numbber of sites
+num_sites <- pan_data$NumSites[1] # load numbber of sites
 num_sites
-mt_rate <- pan_data$MtRatePerSite # load mutation rate per site
+mt_rate <- pan_data$MtRatePerSite[1] # load mutation rate per site
 mt_rate
 
 # observed sumstat
-obs_S <- c(126, 64) # number of segregating sites for the Central and Western subspecies
+obs_S <- seg_sites # number of segregating sites for the Central and Western subspecies
 
 # number of simulations
 nsim <- 1000
 
 # Define sample size
-n <- 5 # number of individuals sampled from each population
-nsites <- 50000 # number of sites in the genome
+n <- ind_num # number of individuals sampled from each population
+nsites <- seg_sites # number of sites in the genome
 nloci <- 1 # number of loci used to estimate the mutation rate
 
 # Define the total mutation rate for the locus under study
-mutrate <- 1.2e-8  
+mutrate <- mut_rate  
+
 
 # Define the prior distribution for the parameter (effective population size Ne)
-prior <- function(n) runif(n, 10, 100000) 
+prior <- function(n) runif(n, 10, 100000) # uniform prior distribution between 10 and 100000 using function runif
 
 # Define the summary statistic function to compute the difference between observed and simulated number of segregating sites
 sumstat <- function(data) abs(data - obs_S)
