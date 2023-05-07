@@ -5,6 +5,12 @@
 
 ##########################################################################################################################
 
+# Install packages
+install.packages("locfit")
+install.packages("scrm")
+install.packages("ape")
+install.packages("scrm")
+
 # Load the packages
 library("locfit")
 library("scrm")
