@@ -40,7 +40,7 @@ seg_sites
 num_sites <- pan_data$NumSites[1] # load number of sites
 num_sites
 mt_rate <- pan_data$MtRatePerSite[1] # load mutation rate per site
-mt_rate <- 1.2e-8
+mt_rate <- 1.2e-8 # had to manually change the value of mutation rate because it was not being read correctly
 mt_rate
 
 # observed number of segregating sites
@@ -95,6 +95,7 @@ for(i in 1:nsim) {
 
 dist_sumstat_central <- abs(simS-obs_S_central)
 dist_sumstat_western <- abs(simS-obs_S_western)
+
 
 
 ### 5. Reject the parameter values that result in large distances than the tolerance distance
