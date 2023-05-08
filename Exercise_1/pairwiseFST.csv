@@ -1,0 +1,8 @@
+,San,Mbuti,Mozabite,Pathan,Cambodian,Yakut,Maya
+San,NA,0.004,0,0,0,0,0
+Mbuti,0.004,NA,0.019,0,0,0,0
+Mozabite,0,0.019,NA,0,0,0,0
+Pathan,0,0,0,NA,0,0.001,0
+Cambodian,0,0,0,0,NA,0,0
+Yakut,0,0,0,0.001,0,NA,0
+Maya,0,0,0,0,0,0,NA
