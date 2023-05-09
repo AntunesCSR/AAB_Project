@@ -121,6 +121,8 @@ closest_sims_western_05 <- which(dist_sumstat_western<tol05_dst_western) # get t
 closest_sims_central_40 <- which(dist_sumstat_central<tol40_dst_central) # get the closest simulations for the central subspecies (tolerance 40%)
 closest_sims_western_40 <- which(dist_sumstat_western<tol40_dst_western) # get the closest simulations for the western subspecies (tolerance 40%)
 
+
+
 ### 7.  Visualize the results
 
 # Plot and save the joint distribution of the prior and summary statistics for both subspecies
