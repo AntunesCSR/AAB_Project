@@ -8,7 +8,7 @@
 # Load packages
 
 library(RColorBrewer)
-source("utilfunctions.r")
+source("utilfunctions.r") # Author: Vitor Sousa (vmsousa@fc.ul.pt)
 
 getwd()
 setwd("C:/Users/antun/OneDrive/Documents/Education/MRes/Year 1 - Semester 2/AAB/Final Project/AAB_Project/Exercise_1") # set working directory
@@ -91,10 +91,6 @@ rownames(pairfst) <- popnames
 pairfst
 write.csv(pairfst, file = "./pairwiseFST.csv", quote = FALSE)
 
-# Print the matrix with the pairwise p-values
-colnames(pairpvalues) <- popnames
-rownames(pairpvalues) <- popnames
-pairpvalues
 
 # Plot and save the pairwise FST values
 png("Pairwise_FST.png", width = 800, height = 800)

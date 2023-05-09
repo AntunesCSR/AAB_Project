@@ -16,9 +16,8 @@ library("locfit")
 library("scrm")
 library("ape")
 library(scrm)
-source("coalfunctions.r")
-source("coalfunctions.r")
-source("abc_plot_rejection.r")
+source("coalfunctions.r") # Author: Vitor Sousa (vmsousa@fc.ul.pt)
+source("abc_plot_rejection.r") # Author: Vitor Sousa (vmsousa@fc.ul.pt)
 
 getwd()
 setwd("C:/Users/antun/OneDrive/Documents/Education/MRes/Year 1 - Semester 2/AAB/Final Project/AAB_Project/Exercise_2") # set working directory
